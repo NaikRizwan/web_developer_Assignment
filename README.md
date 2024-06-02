@@ -9,7 +9,7 @@ To use this project locally, follow these steps:
 1. **Clone the Repository**: Download the code by cloning this repository to your local machine using GitHub.
 
    ```bash
-   git clone 
+   git clone https://github.com/NaikRizwan/web_developer_Assignment.git
    ```
 
 2. **Install Dependencies**: Navigate into the project directory and install the required dependencies using npm.
