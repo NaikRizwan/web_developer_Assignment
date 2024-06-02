@@ -16,7 +16,9 @@ app.use(bodyParser.json());
 //   useNewUrlParser: true,
 //   useUnifiedTopology: true,
 // });
-
+app.get("/", (req, res) => {
+  res.json({ message: "hello world" });
+});
 const ContentSchema = new mongoose.Schema({
   content: String,
 });
