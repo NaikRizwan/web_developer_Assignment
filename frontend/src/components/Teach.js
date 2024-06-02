@@ -121,7 +121,9 @@ const Teach = () => {
   useEffect(() => {
     const fetchContents = async () => {
       try {
-        const response = await fetch("http://localhost:5001/api/getContent");
+        const response = await fetch(
+          "https://web-developer-assignment-tut8.vercel.app/api/getContent"
+        );
         if (response.ok) {
           const data = await response.json();
           setContents(data.contents);

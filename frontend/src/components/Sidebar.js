@@ -16,7 +16,9 @@ const Sidebar = () => {
   useEffect(() => {
     const fetchSchoolName = async () => {
       try {
-        const response = await fetch("http://localhost:5001/api/getSchool");
+        const response = await fetch(
+          "https://web-developer-assignment-tut8.vercel.app/api/getSchool"
+        );
         if (response.ok) {
           const data = await response.json();
           setSchoolName(data.name);

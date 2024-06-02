@@ -25,13 +25,16 @@ const AddContentModal = () => {
   };
 
   const handleSubmit = async () => {
-    const response = await fetch("http://localhost:5001/api/addContent", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ content: textContent }),
-    });
+    const response = await fetch(
+      "https://web-developer-assignment-tut8.vercel.app/api/addContent",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ content: textContent }),
+      }
+    );
 
     if (response.ok) {
       alert("Content added successfully");
